@@ -7,11 +7,11 @@ from .forms import ExpenseForm
 import json
 
 def project_list(request):
-    project_list = Project.objects.all()
+    project_list = Fund.objects.all()
     return render(request, 'app/project-list.html', {'project_list': project_list})
 
 def project_detail(request, project_slug):
-    project = get_object_or_404(Project, slug=project_slug)
+    project = get_object_or_404(Fund, slug=project_slug)
 
     if request.method == 'GET':
         category_list = Category.objects.filter(project=project)
@@ -55,7 +55,7 @@ class ProjectCreateView(CreateView):
         categories = self.request.POST.get('categoriesString').split(',')
         for category in categories:
             Category.objects.create(
-                project=Project.objects.get(id=self.object.id),
+                project=Fund.objects.get(id=self.object.id),
                 name=category
             )
 

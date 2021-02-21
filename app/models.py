@@ -9,7 +9,7 @@ class Fund(models.Model):
 
     def save(self, *args, **kwargs):
         self.slug = slugify(self.name)
-        super(Project, self).save(*args, **kwargs)
+        super(Fund, self).save(*args, **kwargs)
 
     @property
     def budget_left(self):
