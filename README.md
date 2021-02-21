@@ -13,7 +13,9 @@ A full stack funds management web app.
 [![](https://img.shields.io/github/forks/chiraag-kakar/managefunds?style=for-the-badge)]()
 [![](https://img.shields.io/github/stars/chiraag-kakar/managefunds?style=for-the-badge)]()
 
-** Manage Funds is a full stack web application where the users can manage Funds coming in their Programmes/Clubs/Organizations.
+**Manage Funds** is a full stack web application where the users can manage Funds coming in their Programmes/Clubs/Organizations.
+
+
 * They can add a fund along with the associated budget.
 * Then they will also have the privilege to add expenses involved in that fund.
 * The count of transactions and balance will be tracked too.
