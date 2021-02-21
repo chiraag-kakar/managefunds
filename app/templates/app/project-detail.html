@@ -8,14 +8,14 @@
 
       <div class="col s12 m12 l4">
         <div class="card-panel">
-          <h6 class="bold">Total Budget</h6>
+          <h6 class="bold">Total Funding Received</h6>
           <h1 class="bold">${{ project.budget }}</h1>
         </div>
       </div>
 
       <div class="col s12 m6 l4">
         <div class="card-panel">
-          <h6 class="bold">Budget Left</h6>
+          <h6 class="bold">Funding Left</h6>
           {% if project.budget_left > 0 %}
             <h1 class="bold green-text">${{ project.budget_left }}</h1>
           {% elif project.budget_left == 0 %}

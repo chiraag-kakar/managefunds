@@ -4,7 +4,7 @@
 <div class="container">
 
   {% if project_list %}
-  <h1>My Projects</h1>
+  <h1>My Funds</h1>
   <hr>
   {% endif %}
 
@@ -18,10 +18,10 @@
     </div>
     {% empty %}
     <div class="noproject-wrapper center">
-      <h3 class="grey-text">Sorry, you don't have any projects, yet.</h3>
+      <h3 class="grey-text">Sorry, you don't have any funds, yet.</h3>
       <a href="{% url 'add' %}" class="btn-large grey">
         <i class="material-icons white-text left">add_circle</i>
-        <span class="bold">Add Project</span>
+        <span class="bold">Add Fund</span>
       </a>
     </div>
     {% endfor %}

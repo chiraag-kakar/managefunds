@@ -1,4 +1,4 @@
-{% extends 'budget/base.html' %}
+{% extends 'app/base.html' %}
 {% load static %}
 {% block content %}
 
@@ -7,7 +7,7 @@
   <form method="POST">
     {% csrf_token %}
     {{ form }}
-    <label for="categoryInput">Expense Categores (hit enter after every category)</label>
+    <label for="categoryInput">Expense Categories (hit enter after every category)</label>
     <input type="text" name="categoryInput" id="categoryInput">
     <input type="hidden" name="categoriesString">
 
@@ -15,7 +15,7 @@
 
     </ul>
 
-    <button type="submit" class="btn">Start Project</button>
+    <button type="submit" class="btn">Start Managing the Fund</button>
 
   </form>
 </div>
